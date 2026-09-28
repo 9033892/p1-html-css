@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Abonnementsformulier voor Hallo Hi!</title>
+</head>
+
+<body style="background-color: blueviolet;">
+    <form action="">
+        <input type="text" placeholder="Vornaam" minlength="2" maxlength="10" required>
+        <br><br>
+        <input type="text" placeholder="Achternaam" minlength="2" maxlength="10" required>
+        <br><br>
+        <label for="dhr">Dhr.</label>
+        <input type="checkbox" name="dhr" checked id="" class="single-choice">
+        <label for="mevr">Mevr.</label>
+        <input type="checkbox" name="mevr" id="" class="single-choice">
+        <br><br>
+        <input type="text" placeholder="Straat met huisnummer" required>
+        <br><br>
+        <input type="text" placeholder="Postcode" minlength="4" required>
+        <br><br>
+        <input type="text" placeholder="Woonplaats" minlength="2" required>
+        <br><br>
+        <input type="text" placeholder="Land" required>
+        <br><br>
+        <input type="text" placeholder="IBAN-nummer" minlength="18" maxlength="18" required>
+        <br><br>
+        <label for="mobiel">Mobiel</label>
+        <input type="checkbox" name="mobiel" id="" class="single-choice2">
+        <br><br>
+        <label for="glasvezel">Glasvezel</label>
+        <input type="checkbox" name="glasvezel" id="" class="single-choice2">
+        <br><br>
+        <label for="tv">TV</label>
+        <input type="checkbox" name="tv" id="" class="single-choice2">
+        <br><br>
+        <label for="12 maanden">12 maanden</label>
+        <input type="checkbox" name="12 maanden" id="" required>
+        <br><br>
+        <input type="email" placeholder="E-mailadres" name="email" id="email" required>
+        <br><br>
+        <input type="password" placeholder="Wachtwoord" name="" id="" minlength="6" maxlength="12" required>
+        <input type="submit" value="verstuur formulier">
+    </form>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.single-choice');
+
+        checkboxes.forEach(function (currentCheckbox) {
+            currentCheckbox.addEventListener('change', function () {
+                // If the current checkbox is checked, uncheck all others
+                if (this.checked) {
+                    checkboxes.forEach(function (otherCheckbox) {
+                        if (otherCheckbox !== currentCheckbox) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.single-choice2');
+
+        checkboxes.forEach(function (currentCheckbox) {
+            currentCheckbox.addEventListener('change', function () {
+                // If the current checkbox is checked, uncheck all others
+                if (this.checked) {
+                    checkboxes.forEach(function (otherCheckbox) {
+                        if (otherCheckbox !== currentCheckbox) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+</html>
