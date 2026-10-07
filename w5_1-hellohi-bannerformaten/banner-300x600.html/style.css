@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stage {
+    position: relative;
+    cursor: pointer;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bannerSize {
+    width: 300px;
+    height: 600px;
+    background-color: black;
+}
+
+.box {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left: 15px;
+    top: 15px;
+}
+
+.box1,
+.box2,
+.box3 {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+}
+
+.box1 {
+    background-color: #9000ff;
+}
+
+.box2 {
+    background-color: #55559f;
+    left: 30px;
+}
+
+.box3 {
+    background-color: #b0b0eb;
+    left: 60px;
+}
+
+.headerText {
+    color: white;
+    position: absolute;
+    left: 15px;
+    top: 50px;
+}
+
+.headerText2 {
+    color: white;
+    position: absolute;
+    left: 15px;
+    top: 88px;
+}
+
+.headerText3 {
+    color: white;
+    position: absolute;
+    left: 29px;
+    top: 344px;
+
+}
+
+.headerText4 {
+    color: white;
+    position: absolute;
+    left: 15px;
+    top: 115px;
+}
+
+.hiImg {
+    position: absolute;
+    left: 98px;
+    top: 37px;
+    width: 30px;
+    height: auto;
+}
+
+.hiImg2 {
+    position: absolute;
+    left: 57px;
+    top: 125px;
+    width: 139px;
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.circle {
+    position: absolute;
+    width: 395px;
+    height: 222px;
+    border-radius: 100%;
+    background-color: #7272dd;
+    bottom: -95px;
+    right: -59px;
+}
+
+.circlelink {
+    position: absolute;
+    width: 100px;
+    height: 113px;
+    left: 82px;
+    top: 17px;
+    padding: 29px;
+    display: flex;
+    min-inline-size: fit-content;
+    font-size: x-large;
+}
+
+.buttonW {
+    background-color: #7272dd;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+}
